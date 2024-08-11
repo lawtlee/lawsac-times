@@ -82,6 +82,14 @@ export default class MenuBuilder {
             app.quit();
           },
         },
+        {
+          label: 'Close',
+          accelerator: 'Command+W',
+          click: () => {
+            // app.hide()
+            app.exit();
+          },
+        },
       ],
     };
     const subMenuEdit: DarwinMenuItemConstructorOptions = {
